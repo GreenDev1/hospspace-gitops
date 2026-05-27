@@ -1,0 +1,11 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: ln-hospspace-ufe-content
+spec:
+  microFrontend: ln-hospspace-ufe
+  element: ln-hospspace-wl-list
+  displayRules:
+    - allOf:
+      - context-name: main-content
+      - path: "^(\\.?/)?ln-hospspace-wl(/.*)?$"
