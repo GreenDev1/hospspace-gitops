@@ -9,3 +9,6 @@ labels:
 
 resources:
 - ../../../apps/ln-hospspace-ufe
+
+components:
+- ../../../components/version-developers
