@@ -4,8 +4,11 @@ metadata:
   name: ln-hospspace-ufe-content
 spec:
   microFrontend: ln-hospspace-ufe
-  element: ln-hospspace-wl-list
+  element: ln-hospspace-app
+  attributes:
+    - name: base-path
+      value: /hospspace/
   displayRules:
     - allOf:
       - context-name: main-content
-      - path: "^(\\.?/)?ln-hospspace-wl(/.*)?$"
+      - path: "^(/fea/ln-hospspace-wl|/hospspace.*)$"
