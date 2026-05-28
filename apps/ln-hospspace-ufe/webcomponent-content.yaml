@@ -7,8 +7,8 @@ spec:
   element: ln-hospspace-app
   attributes:
     - name: base-path
-      value: /hospspace/
+      value: /ln-hospspace-wl/
   displayRules:
     - allOf:
       - context-name: main-content
-      - path: "^(/fea/ln-hospspace-wl|/hospspace.*)$"
+      - path: ".*hospspace.*"
